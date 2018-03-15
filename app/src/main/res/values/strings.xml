@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">androidNDK</string>
+    <string name="title_activity_handle_service">HandleServiceActivity</string>
 </resources>

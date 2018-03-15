@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.dressplus.androidndk">
 
+    <!-- 允许悬浮窗口 的权限 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -16,8 +19,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity android:name=".GL2Activity" />
+        <activity android:name=".activitys.CardViewActivity" />
+        <activity
+            android:name=".activitys.HandleServiceActivity"
+            android:label="@string/title_activity_handle_service"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service android:name=".services.CustomerBinderService" />
+
+        <service
+            android:name=".services.AIDLService"
+            android:process="com.test.yangxinyu" />
     </application>
 
 </manifest>

@@ -38,12 +38,34 @@
         android:layout_height="wrap_content" />
 
     <Button
-        android:text="handle Bitmap"
-        android:onClick="handleBitmap"
+    android:text="handle Bitmap"
+    android:onClick="handleBitmap"
+    android:textAllCaps="false"
+    android:layout_width="wrap_content"
+    android:layout_marginTop="80dp"
+    android:layout_marginLeft="120dp"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    android:layout_height="wrap_content" />
+
+    <Button
+        android:text="round corner image"
+        android:onClick="handleRoundCorner"
         android:textAllCaps="false"
         android:layout_width="wrap_content"
-        android:layout_marginTop="80dp"
-        android:layout_marginLeft="120dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="handle  Service"
+        android:onClick="handleService"
+        android:textAllCaps="false"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="180dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_height="wrap_content" />

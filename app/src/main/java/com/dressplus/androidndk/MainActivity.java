@@ -9,6 +9,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
+import com.dressplus.androidndk.activitys.CardViewActivity;
+import com.dressplus.androidndk.activitys.HandleServiceActivity;
 import com.dressplus.androidndk.ndkUtils.HelloBasisFun;
 import com.dressplus.androidndk.ndkUtils.HelloTest;
 
@@ -30,6 +32,14 @@ public class MainActivity extends AppCompatActivity {
 
     public void OpenGL2Activity(View view) {
         startActivity(new Intent(this, GL2Activity.class));
+    }
+
+    public void handleRoundCorner(View view) {
+        startActivity(new Intent(this, CardViewActivity.class));
+    }
+
+    public void handleService(View view){
+        startActivity(new Intent(this, HandleServiceActivity.class));
     }
 
 
